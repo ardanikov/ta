@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:8000/login -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jira</title>
+    <link rel="stylesheet" href="./Jira_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body,html {
+            background: #EEEEEE; 
+            height:100%;
+        }
+        .bg2 {
+            height: 100%;
+        }
+        .cardform {
+            position: absolute;
+            left: 19.08%;
+            right: 54.45%;
+            top: 15.56%;
+            bottom: 9.44%;
+            background: #FFFFFF;
+            border-radius: 18px;
+            width: 40rem;
+        }
+    </style>
+</head>
+
+<body>
+            
+            
+    <div class="row">
+        <div class="col-6 d-flex justify-content-center text-center">    
+          
+            <div class="card w-75 d-flex justify-content-center" style="top:10%; height:60%">
+                <img src="./Jira_files/smk.png" class="d-flex mx-auto" alt="" style="
+    width: 25%;
+    position: relative;
+    top: -10%;
+   drop-shadow(2px 2px 0 white)
+        drop-shadow(-2px 2px 0 white)
+        drop-shadow(2px -2px 0 white)
+        drop-shadow(-2px -2px 0 white);
+">
+                <h1 class="card-title mt-5" style="color: #1E1E1E;">Aplikasi E-Raport</h1>
+                <div class="card-body">
+                    <form action="http://localhost:8000/login" method="post">
+                        <input type="hidden" name="_token" value="sJT1QjH6G5SONML3BxXD77bhouZ44EpCcFKG8icT">        
+                    <div class="input-group mb-4 mx-auto" style="width:85%">
+                        <input type="email" name="email" class="form-control " value="" placeholder="Email" autofocus="">
+                                            </div>
+
+                    <div class="input-group mb-3 mx-auto" style="width:85%; height: 10%">
+                        <input type="password" name="password" class="form-control " placeholder="Password">
+                                            </div>
+
+                    <div class="row d-flex justify-content-center mt-5">
+                        <div class="col-6">
+                            <div class="icheck-primary" title="Keep me authenticated indefinitely or until I manually logout">
+                                <input type="checkbox" name="remember" id="remember">
+            
+                                <label for="remember">
+                                    Remember Me
+                                </label>
+                            </div>
+                        </div>
+            
+                        <div class="col-6">
+                            <button type="submit" class="btn btn-block btn-flat btn-primary">
+                                <span class="fas fa-sign-in-alt"></span>
+                                Sign In
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>            
+        
+    </div>
+        <div class="col-6 bg2 p-0"><img style="width: 100%; height:100%" src="./Jira_files/bg2.png" alt=""></div>
+    </div>
+
+    
+
+
+</body></html>

@@ -1,0 +1,135 @@
+.navbar-primary-light {
+  background-color: white;
+  color: #343a40;
+}
+.main-color {
+  background-color: #294a70 !important;
+  color: white !important;
+}
+.bi-select {
+  background-color: white;
+  color: #343a40;
+}
+option:hover {
+  background-color: #294a70 !important;
+  color: white !important;
+}
+.form-select:hover {
+  cursor: pointer;
+}
+.homeinfo {
+  height: 100%;
+}
+.dataTables_filter {
+  display: none;
+}
+.dataTables_paginate,
+.paging_simple_numbers {
+  display: flex;
+  justify-content: end;
+}
+
+thead {
+  background-color: #24436a;
+  color: white;
+  font-size: 18px;
+}
+.img-properties {
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
+}
+.content-detail-kanan {
+  border-left: 1px solid #c7ccd0;
+  color: #6c757d !important;
+}
+.bottomtext {
+  margin-bottom: 0;
+  margin-left: 13px;
+}
+.content-detail-kiri {
+  width: 395px;
+}
+.pendidikan-detail-title {
+  width: 201px;
+}
+.pendidikan-detail-3 {
+  border-left: 1px solid #c7ccd0;
+  color: #6c757d !important;
+  width: 283px;
+}
+.pendidikan-detail-2 {
+  border-left: 1px solid #c7ccd0;
+  color: #6c757d !important;
+}
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #eff3f8;
+}
+.custom-file-input:hover {
+  cursor: pointer;
+}
+.profilePhoto {
+  aspect-ratio: 1/1;
+  width: 45%;
+  height: 90%;
+  border-radius: 80px;
+  object-fit: cover;
+  border: 4px solid #6c757d;
+}
+.photoThumbnail {
+  aspect-ratio: 1/1;
+  width: 63%;
+  height: 90%;
+  border-radius: 80px;
+  object-fit: cover;
+}
+.btn-hijau {
+  background-color: #2bbc4c !important;
+  color: white !important;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.btnLogout {
+  position: fixed;
+  bottom: 0;
+  border: 1px solid white !important;
+  color: white;
+}
+.btnLogout:hover {
+  color: #d62f2f !important;
+  transition: 0.1s ease;
+  border: 1px solid #d62f2f !important;
+}
+.fixedBottom {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+.info-box:hover {
+  color: #24436a;
+  transition: 0.3s ease;
+}
+
+.font-size-16px {
+  font-size: 16px !important;
+}
+
+.invincible {
+  border: none;
+  pointer-events: none;
+}
+.true-invincible {
+  opacity: 0%;
+}
+.bg-invincible {
+  background-color: rgba(0, 0, 0, 0);
+}
+.inputdetail {
+  height: 25px;
+}
+table {
+  overflow-x: scroll;
+}
