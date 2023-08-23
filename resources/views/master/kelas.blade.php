@@ -155,11 +155,12 @@
 
           <div class="col-4 d-flex mb-1"><h5 class="d-flex my-auto">Wali Kelas</h5></div>
           <div class="col-8 mb-1">
-            <select name="guru" class="custom-select">
+            <input type="text" name="nama_jurusan" class="form-control" placeholder="cth : Aan Anjar S.Kom"></div>
+            {{-- <select name="guru" class="custom-select">
               @foreach($guru as $g)
             <option value="{{ $g->id }}">{{ $g->nama }}</option>
             @endforeach
-          </select>
+          </select>  --}}
         </div>
       </div>
       <div class="modal-footer justify-content-end">

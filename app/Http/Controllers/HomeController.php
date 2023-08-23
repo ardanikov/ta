@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Auth;
+use App\Models\Kelas;
+use App\Models\Mapel;
+use App\Models\Siswa;
+use App\Models\DetailSiswa;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -12,6 +16,8 @@ class HomeController extends Controller
      *
      * @return void
      */
+
+    
 
     public function __construct()
     {
@@ -25,6 +31,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $siswa = DetailSiswa::count();
+        $kelas = Kelas::count();
+        $mapel = Mapel::count();
+        return view('home', [
+            'tsiswa' => $siswa,
+            'tkelas' => $kelas,
+            'tmapel' => $mapel
+        ]);
+    }
+
+    public function logout() 
+    {
+        return view('/login');
     }
 }

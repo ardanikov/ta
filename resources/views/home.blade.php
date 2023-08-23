@@ -866,8 +866,6 @@
       <!-- /.content -->
     </div> --}}
     <!-- /.content-wrapper -->
-    <!-- Main Footer -->
-    @include('layouts.footer')
 
     <div class="konten" style="margin-left:262px">
     <div class="content-header p-2 mt-1" style="
@@ -907,7 +905,7 @@
                     <div class="info-box-content">
                       <h4 class="info-box-text mb-0 font-weight-bold">Jumlah Siswa</h4>
                       <span class="info-box-number">
-                        1012
+                        {{ $tsiswa }}
                       </span>
                     </div>
                     <!-- /.info-box-content -->
@@ -926,7 +924,7 @@
                     <div class="info-box-content">
                       <h4 class="info-box-text mb-0 font-weight-bold">Jumlah Kelas</h4>
                       <span class="info-box-number">
-                        64
+                        {{ $tkelas }}
                       </span>
                     </div>
                     <!-- /.info-box-content -->
@@ -945,7 +943,7 @@
                     <div class="info-box-content">
                       <h4 class="info-box-text mb-0 font-weight-bold">Jumlah Mapel</h4>
                       <span class="info-box-number">
-                        38
+                        {{ $tmapel }}
                       </span>
                     </div>
                     <!-- /.info-box-content -->
@@ -963,5 +961,7 @@
     {{-- konten --}}
   </div>
   <!-- ./wrapper -->
+  <!-- Main Footer -->
+  @include('layouts.footer')
   
 @endsection

@@ -14,10 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('/home');
+    return view('auth.login');
 });
 
 Auth::routes();
+Route::post('logoutt', [App\Http\Controllers\HomeController::class, 'logout']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -58,6 +59,10 @@ Route::get('/leger', [App\Http\Controllers\LegerController::class, 'index'])->na
 Route::get('/detail_leger', [App\Http\Controllers\LegerController::class, 'detail'])->name('detail_leger');
 Route::get('/export_leger', [App\Http\Controllers\LegerController::class, 'export']);
 
+// //NILAI
+// Route::get('/kurikulum', [App\Http\Controllers\KurikulumController::class, 'index'])->name('kurikulum');
+// // Route::get('/detail_nilai/{id}', [App\Http\Controllers\NilaiController::class, 'detail'])->name('detail_nilai');
+// Route::post('/addKurikulum', [App\Http\Controllers\KurikulumController::class, 'store']);
 
 //NILAI
 Route::get('/nilai', [App\Http\Controllers\NilaiController::class, 'index'])->name('nilai');

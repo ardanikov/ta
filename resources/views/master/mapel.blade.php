@@ -84,7 +84,8 @@
                         <tr>
                           <th class="text-center">No</th>
                           <th>Mata Pelajaran</th>
-                          <th class="text-center">Ringkas</th>
+                          <th class="text-center">Ringkasan</th>
+                          <th class="text-center">Kurikulum</th>
                           <th class="text-center" style="width: 90px;">Aksi</th>
                         </tr>
                         </thead>
@@ -94,6 +95,7 @@
                           <td class="text-center">{{ $index+1 }}</td>
                           <td>{{ Str::title($m->nama_pelajaran) }}</td>
                           <td class="text-center">{{ Str::upper($m->ringkas) }}</td>
+                          <td>{{ Str::title($m->m_kurikulum) }}</td>
                           <td class="text-center d-flex justify-content-center"><div class="row">
                             
                         <div class="col-6 px-0 d-flex justify-content-center">

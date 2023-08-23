@@ -13,4 +13,9 @@ class Kurikulum extends Model
     protected $fillable = [
         'nama_kurikulum'
     ];
+
+    public function mapel(): hasMany
+    {
+        return $this->hasMany(Mapel::class);
+    }
 }
